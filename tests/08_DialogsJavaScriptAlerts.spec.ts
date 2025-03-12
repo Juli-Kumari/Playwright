@@ -1,5 +1,4 @@
 import { expect, test } from '@playwright/test'
-import exp from 'constants'
 
 test('Handle Dialogs or JavaScript: Alert', async ({ page }) => {
     await page.goto('https://the-internet.herokuapp.com/javascript_alerts')
