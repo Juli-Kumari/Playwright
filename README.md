@@ -294,3 +294,4 @@ If multiple afterAll hooks are added, they will run in the order of their regist
 4. npx playwright test Assertion.spec.ts --project='firefox' --> To run in particular browser/system
 5. npx playwright test Assertion.spec.ts --project='firefox' --headed --> To run in particular browser/system with headed mode.
 6. Reports in playwright -> by default report store in the below folder ==> playwrite-report --> index.html
+7. fixtures used as beforeEach, afterEach & before & after also.
