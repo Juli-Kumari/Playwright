@@ -1,4 +1,4 @@
-import {test} from '../fixtures/MyCustomFixture.spec'
+import {test} from '../fixtures/MyCustomFixture'
 
 test('Test practice 1', ({fixture1, workerFixture1})=>{
     console.log(fixture1)

@@ -16,7 +16,7 @@ export const test = baseTest.extend<MyFixture, MyWorkerFixture1>({
         console.log("After part of Fixture 1")
     },
 
-    // worker fixture ->  array 
+    // worker fixture ->  contains 2 items 
     workerFixture1:[async({}, use)=>{
         const workerFixture1='I am worker fixture 1'
         console.log("Before part of worker Fixture 1")
