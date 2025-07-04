@@ -6,6 +6,9 @@ test('Handle iframe with name', async ({ page }) => {
     const w3Frame = page.frame('iframeResult')
     await w3Frame?.locator('#fname').fill('Test automation')
 })
+//   w3Frame?.locator('#fname').fill('Test automation')
+// If w3Frame is not null or undefined, then run .locator(...).fill(...)."
+// If w3Frame is null or undefined, then do nothing (and avoid a crash or error like Cannot read properties of null)
 
 test('Handle iframe with URL', async ({ page }) => {
     await page.goto('https://www.w3schools.com/html/html_iframe.asp')
