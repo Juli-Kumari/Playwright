@@ -10,6 +10,9 @@ test('Handle iframe with name', async ({ page }) => {
 // If w3Frame is not null or undefined, then run .locator(...).fill(...)."
 // If w3Frame is null or undefined, then do nothing (and avoid a crash or error like Cannot read properties of null)
 
+// Because page.frame(...) might return null if the frame doesn't exist or hasn’t loaded yet. So to avoid this error:
+// TypeError: Cannot read properties of null (reading 'locator')
+
 test('Handle iframe with URL', async ({ page }) => {
     await page.goto('https://www.w3schools.com/html/html_iframe.asp')
     const iframeLoc = page.frame('https://www.w3schools.com/html/default.asp')
